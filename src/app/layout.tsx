@@ -5,6 +5,7 @@ import SessionPreloader from "@/components/SessionPreloader";
 import BottomNav from "@/components/BottomNav";
 import GoldProgressBar from "@/components/GoldProgressBar";
 import GlowingParticles from "@/components/GlowingParticles";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -18,61 +19,93 @@ export const viewport: Viewport = {
   themeColor: "#060503",
 };
 
+// Resuelve la URL de producción o Vercel dinámicamente para que las tarjetas de OpenGraph funcionen en cualquier dominio
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "https://fortius-capital.vercel.app");
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Fortius Capital — Préstamos Personales y Garantía Vehicular en Perú",
+    default: "Fortius Capital | Préstamos Personales y Garantía Vehicular en Perú",
     template: "%s | Fortius Capital",
   },
   description:
-    "Tu solución financiera fácil, rápida y segura. Préstamos personales al instante y préstamos con garantía vehicular sin dejar de usar tu auto. Fortius Capital (RUC: 20616561082).",
+    "Soluciones financieras ágiles, seguras y transparentes en Perú. Préstamos personales al instante y créditos con garantía vehicular sin dejar de conducir tu auto. RUC: 20616561082.",
   keywords: [
-    "préstamos personales",
-    "préstamo vehicular",
-    "crédito rápido Perú",
-    "garantía de auto",
-    "Procustodia",
-    "financiera Perú",
     "Fortius Capital",
-    "FORTIUS CAPITAL",
     "FORTIUS CAPITAL S.A.C.",
-    "crédito al instante",
-    "dinero rápido",
+    "préstamos personales Perú",
+    "crédito vehicular",
+    "garantía vehicular",
+    "préstamo con auto sin dejarlo",
+    "crédito al instante Lima",
+    "dinero rápido seguro",
+    "Procustodia",
     "RUC 20616561082",
+    "financiera confiable Perú",
   ],
-  authors: [{ name: "FORTIUS CAPITAL S.A.C." }],
-  metadataBase: new URL("https://fortiuscapital.pe"),
+  authors: [{ name: "FORTIUS CAPITAL S.A.C.", url: SITE_URL }],
+  creator: "FORTIUS CAPITAL S.A.C.",
+  publisher: "FORTIUS CAPITAL S.A.C.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Fortius Capital — Tu Solución Financiera de Confianza",
-    description:
-      "Préstamos personales al instante y préstamos con garantía vehicular. Tu aliado financiero confiable en Perú.",
-    url: "https://fortiuscapital.pe",
-    siteName: "Fortius Capital",
-    locale: "es_PE",
     type: "website",
+    locale: "es_PE",
+    url: SITE_URL,
+    siteName: "Fortius Capital",
+    title: "Fortius Capital | Préstamos Personales y Garantía Vehicular",
+    description:
+      "Soluciones financieras al instante en Perú. Préstamos personales y créditos con garantía vehicular sin dejar tu auto. Aprobación inmediata y total respaldo legal. RUC: 20616561082.",
     images: [
       {
-        url: "/images/fortius-badge.jpg",
+        url: "/og-image.jpg",
+        secureUrl: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Fortius Capital — Préstamos Personales y Garantía Vehicular",
+        type: "image/jpeg",
+        alt: "Fortius Capital — Préstamos Personales y Garantía Vehicular en Perú",
+      },
+      {
+        url: "/og-image.png",
+        secureUrl: "/og-image.png",
+        width: 1200,
+        height: 630,
+        type: "image/png",
+        alt: "Fortius Capital — Soluciones Financieras de Confianza",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fortius Capital — Préstamos Rápidos y Seguros",
+    title: "Fortius Capital | Préstamos Personales y Garantía Vehicular",
     description:
-      "Consigue tu préstamo en minutos. Préstamos personales y con garantía vehicular.",
-    images: ["/images/fortius-badge.jpg"],
+      "Préstamos personales rápidos y créditos con garantía vehicular sin dejar tu auto en Perú. Aprobación inmediata y total respaldo legal. RUC: 20616561082.",
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
     follow: true,
-    maxImagePreview: "large",
-    maxSnippet: -1,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "192x192" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
 
