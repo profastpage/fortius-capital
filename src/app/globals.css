@@ -41,15 +41,15 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  /* ── MANDI CORP Brand Colors (Negro + Dorado) ── */
+  /* ── FORTIUS CAPITAL Brand Colors (Perlado + Negro + Dorado) ── */
   --color-brand-blue: #DCAA61;   /* alias legacy → dorado principal */
-  --color-brand-dark: #060503;   /* negro principal MANDI */
+  --color-brand-dark: #060503;   /* negro principal Fortius */
   --color-brand-green: #A97631;  /* alias legacy → dorado oscuro */
-  --color-brand-orange: #DCAA61; /* dorado principal MANDI */
+  --color-brand-orange: #DCAA61; /* dorado principal Fortius */
   --color-brand-red: #A97631;    /* alias legacy → dorado oscuro */
 
-  /* ── Override Tailwind orange palette → MANDI Gold palette ── */
-  /* Mantener nombres orange-* para no tocar componentes; valores mapeados a dorado MANDI */
+  /* ── Override Tailwind orange palette → Fortius Gold palette ── */
+  /* Mantener nombres orange-* para no tocar componentes; valores mapeados a dorado Fortius */
   --color-orange-300: #E0CBAB;  /* gold-light (crema dorado) */
   --color-orange-400: #DCAA61;  /* gold-primary (dorado principal) */
   --color-orange-500: #DCAA61;  /* gold-primary (dorado principal) */
@@ -57,10 +57,10 @@
   --color-orange-700: #6D4B21;  /* gold-deep (dorado profundo) */
   --color-orange-900: #2A2013;  /* black-soft (negro suave) */
 
-  /* ── Override Tailwind slate palette → NEGRO PURO MANDI (sin tinte azul) ── */
+  /* ── Override Tailwind slate palette → NEGRO PURO FORTIUS (sin tinte azul) ── */
   /* Elimina el fondo "azul medio" que se veía con slate-950 original */
   --color-slate-950: #000000;   /* negro absoluto */
-  --color-slate-900: #060503;   /* negro MANDI principal */
+  --color-slate-900: #060503;   /* negro principal */
   --color-slate-800: #0F0C08;   /* negro con tinte dorado profundo */
   --color-slate-700: #1A140B;   /* negro suave cálido */
 
@@ -82,7 +82,7 @@
   --card-foreground: oklch(0.145 0.015 260);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0.015 260);
-  /* MANDI CORP — Dorado sobre Negro (OKLCH approximado desde hex) */
+  /* Fortius Capital — Perlado y Dorado sobre Negro */
   --primary: oklch(0.80 0.12 75);           /* #DCAA61 dorado principal */
   --primary-foreground: oklch(0.02 0.005 60); /* #060503 negro */
   --secondary: oklch(0.18 0.02 65);          /* #2A2013 black-soft */
@@ -114,7 +114,7 @@
     @apply bg-slate-950 text-slate-800;  /* slate-950 sobreescrito a negro puro arriba */
     overflow-x: hidden;
     position: relative;
-    background-color: #000000 !important;  /* negro absoluto MANDI, garantiza cero tinte azul */
+    background-color: #000000 !important;  /* negro absoluto Fortius, garantiza cero tinte azul */
     /* Padding inferior en mobile para que el BottomNav no tape contenido.
        72px = altura del BottomNav (48px área táctil + 24px padding/borde).
        Env(safe-area-inset-bottom) suma el espacio de iPhone con notch/home indicator.
@@ -137,13 +137,13 @@
 }
 
 .glass-dark {
-  background: rgba(6, 5, 3, 0.7);   /* #060503 negro MANDI con alpha */
+  background: rgba(6, 5, 3, 0.7);   /* #060503 negro Fortius con alpha */
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(220, 170, 97, 0.18);  /* dorado sutil */
 }
 
-/* Hero gradient background — MANDI CORP (negro→dorado profundo→dorado oscuro→dorado principal) */
+/* Hero gradient background — Fortius Capital (negro→dorado profundo→dorado oscuro→dorado principal) */
 .hero-gradient {
   background: linear-gradient(135deg, #000000 0%, #060503 25%, #2A2013 50%, #6D4B21 75%, #A97631 100%);
 }
@@ -328,7 +328,7 @@
   filter: blur(40px);
 }
 
-/* Animated gradient for accents — MANDI CORP dorado metálico shimmer */
+/* Animated gradient for accents — Fortius Capital dorado metálico y perlado shimmer */
 .gradient-shimmer {
   background: linear-gradient(
     110deg,

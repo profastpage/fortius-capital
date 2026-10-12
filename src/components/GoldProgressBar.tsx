@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 /**
- * MANDI CORP — Barra de Progreso Dorada
+ * Fortius Capital — Barra de Progreso Dorada
  * Barra fija superior que avanza 0→100% con el scroll.
  * Gradiente dorado premium con glow metálico.
  */

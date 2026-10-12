@@ -1,7 +1,7 @@
 /**
  * WhatsApp Conversion Utility
  * Centralized redirect logic for all WhatsApp CTAs across the site.
- * Phone: +51 966 897 008 (CORPORACIÓN MANDI SAC)
+ * Phone: +51 966 897 008 (Fortius Capital)
  */
 
 export const WHATSAPP_PHONE = "51966897008";
@@ -19,23 +19,23 @@ type WhatsAppContext =
 
 const WHATSAPP_MESSAGES: Record<WhatsAppContext, string> = {
   home:
-    "Hola, vengo desde la página web y estoy interesado en un préstamo",
+    "Hola, vengo desde la página web de Fortius Capital y estoy interesado en un préstamo",
   "prestamos-personales":
-    "Hola MANDI CORP, me interesa conocer los requisitos para el préstamo personal al instante...",
+    "Hola Fortius Capital, me interesa conocer los requisitos para el préstamo personal al instante...",
   "garantia-vehicular":
-    "Hola MANDI CORP, deseo cotizar un préstamo usando mi auto como garantía sin dejar de usarlo...",
+    "Hola Fortius Capital, deseo cotizar un préstamo usando mi auto como garantía sin dejar de usarlo...",
   nosotros:
-    "Hola, vengo desde la sección Nosotros y deseo más información sobre sus servicios...",
+    "Hola Fortius Capital, vengo desde la sección Nosotros y deseo más información sobre sus servicios...",
   contacto:
-    "Hola, vengo desde la página web y deseo comunicarme con un asesor...",
+    "Hola Fortius Capital, vengo desde la página web y deseo comunicarme con un asesor...",
   "vehicular-cotizacion":
-    "Hola, vengo desde la página web y estoy interesado en un préstamo vehicular",
+    "Hola Fortius Capital, vengo desde la página web y estoy interesado en un préstamo vehicular",
   asesoria:
-    "Hola, vengo desde la página web y necesito asesoría financiera.",
+    "Hola Fortius Capital, vengo desde la página web y necesito asesoría financiera.",
   reclamo:
-    "Hola MANDI CORP, deseo presentar un reclamo/queja. Mis datos son:",
+    "Hola Fortius Capital, deseo presentar un reclamo/queja. Mis datos son:",
   "libro-de-reclamaciones":
-    "Hola MANDI CORP, me encuentro en la sección de Libro de Reclamaciones y deseo presentar una consulta...",
+    "Hola Fortius Capital, me encuentro en la sección de Libro de Reclamaciones y deseo presentar una consulta...",
 };
 
 /** Display names for each section (used in dynamic WhatsApp messages) */
@@ -58,11 +58,11 @@ const PATHNAME_CONTEXT_MAP: Record<string, WhatsAppContext> = {
 
 /**
  * Generates a WhatsApp URL with a dynamic message based on the current pathname.
- * Format: "Hola MANDI CORP, me encuentro en la sección de [Nombre] y deseo solicitar asesoría..."
+ * Format: "Hola Fortius Capital, me encuentro en la sección de [Nombre] y deseo solicitar asesoría..."
  */
 export function getDynamicWhatsAppUrl(pathname: string): string {
   const pageName = PAGE_DISPLAY_NAMES[pathname] || "la página web";
-  const message = `Hola MANDI CORP, me encuentro en la sección de ${pageName} y deseo solicitar asesoría...`;
+  const message = `Hola Fortius Capital, me encuentro en la sección de ${pageName} y deseo solicitar asesoría...`;
   const encoded = encodeURIComponent(message);
   return `https://api.whatsapp.com/send?phone=${WHATSAPP_PHONE}&text=${encoded}`;
 }

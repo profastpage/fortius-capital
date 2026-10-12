@@ -267,7 +267,7 @@ function ProductsSection() {
       whatsapp: "prestamos-personales" as const,
       gradient: "from-orange-600 to-red-700",
       image: "/images/personal-loan.jpg",
-      imageAlt: "Préstamo personal al instante - MANDI CORP",
+      imageAlt: "Préstamo personal al instante - Fortius Capital",
       description:
         "Préstamos personales rápidos sin complicaciones. Montos desde S/ 500 hasta S/ 20,000 con aprobación en menos de 24 horas.",
     },
@@ -279,7 +279,7 @@ function ProductsSection() {
       whatsapp: "garantia-vehicular" as const,
       gradient: "from-orange-700 to-red-800",
       image: "/images/car-drive.jpg",
-      imageAlt: "Préstamo con garantía vehicular - MANDI CORP",
+      imageAlt: "Préstamo con garantía vehicular - Fortius Capital",
       description:
         "Usa tu auto como garantía sin dejar de usarlo. Alianza estratégica con Procustodia para mayor seguridad.",
     },
@@ -460,7 +460,7 @@ function FeaturesSection() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-black/30">
               <Image
                 src="/images/customer-service.jpg"
-                alt="Equipo de atención al cliente de MANDI CORP"
+                alt="Equipo de atención al cliente de Fortius Capital"
                 width={400}
                 height={520}
                 className="w-full h-auto object-cover rounded-3xl"
@@ -651,38 +651,6 @@ function CTASection() {
   );
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   VACA FULL BLEED — Ultra Pro Image Section
-   ═══════════════════════════════════════════════════════════════════════════ */
-function VacaFullBleed() {
-  return (
-    <section className="relative w-full">
-      {/* Fade superior — se fusiona con la sección anterior (oscura) */}
-      <div
-        className="absolute top-0 left-0 right-0 h-[20px] md:h-[35px] z-10 pointer-events-none"
-        style={{
-          background: "linear-gradient(to bottom, rgba(2, 6, 23, 0.18) 0%, transparent 100%)",
-        }}
-      />
-      <Image
-        src="/images/vaca-oficial.webp"
-        alt="MANDI CORP"
-        width={1536}
-        height={1024}
-        className="w-full h-auto object-cover"
-        quality={92}
-      />
-      {/* Fade inferior — se fusiona con la sección siguiente */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-[20px] md:h-[35px] z-10 pointer-events-none"
-        style={{
-          background: "linear-gradient(to top, rgba(2, 6, 23, 0.14) 0%, transparent 100%)",
-        }}
-      />
-    </section>
-  );
-}
-
 /* ───────────────────────── Main Page Component ───────────────────────── */
 export default function HomePage() {
   return (
@@ -692,7 +660,6 @@ export default function HomePage() {
         <DeepLinking>
         <HeroSection />
         <FeaturesSection />
-        <VacaFullBleed />
         <ProductsSection />
         <ProcessSection />
         <Calculadora />

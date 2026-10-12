@@ -29,7 +29,7 @@ export default function FloatingWhatsApp() {
     >
       <style>{`
         @media (min-width: 1024px) {
-          .mandi-floating-wa { bottom: 24px !important; }
+          .fortius-floating-wa { bottom: 24px !important; }
         }
       `}</style>
       {/* Pulse ring */}
@@ -44,7 +44,7 @@ export default function FloatingWhatsApp() {
         transition={{ delay: 1.5, type: "spring", stiffness: 260, damping: 20 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="mandi-floating-wa relative w-14 h-14 bg-[#25D366] text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform border border-white"
+        className="fortius-floating-wa relative w-14 h-14 bg-[#25D366] text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform border border-white"
       >
         <svg
           className="w-6 h-6"

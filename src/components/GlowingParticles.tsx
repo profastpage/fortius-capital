@@ -3,7 +3,7 @@
 import { useEffect, useRef, useCallback } from "react";
 
 /**
- * MANDI CORP — Glowing Particles Mouse Trail
+ * Fortius Capital — Glowing Particles Mouse Trail
  * Estela de partículas doradas brillantes que siguen el cursor.
  * Usa canvas 2D para máximo rendimiento.
  */

@@ -1,20 +1,20 @@
 /**
- * Site-wide constants for MANDI CORP
- * Razón Social: CORPORACIÓN MANDI SAC
- * RUC: 20615991938
+ * Site-wide constants for Fortius Capital
+ * Razón Social: FORTIUS CAPITAL S.A.C.
+ * RUC: 20616561082
  */
 
 export const SITE_CONFIG = {
-  name: "MANDI CORP",
-  businessName: "CORPORACIÓN MANDI SAC",
-  ruc: "20615991938",
+  name: "Fortius Capital",
+  businessName: "FORTIUS CAPITAL S.A.C.",
+  ruc: "20616561082",
   phone: "+51966897008",
   phoneDisplay: "+51 966 897 008",
-  email: "contacto@mandicorp.com",
-  domain: "mandi-corp.vercel.app",
-  url: "https://mandi-corp.vercel.app",
+  email: "contacto@fortiuscapital.com",
+  domain: "fortiuscapital.pe",
+  url: "https://fortiuscapital.pe",
   description:
-    "Tu solución financiera fácil, rápida y segura. Préstamos personales al instante y préstamos con garantía vehicular sin dejar de usar tu auto. El momento es ahora.",
+    "Tu solución financiera fácil, rápida y segura. Préstamos personales al instante y préstamos con garantía vehicular sin dejar de usar tu auto con Fortius Capital. RUC: 20616561082.",
   keywords: [
     "préstamos personales",
     "préstamo vehicular",
@@ -22,12 +22,13 @@ export const SITE_CONFIG = {
     "garantía de auto",
     "Procustodia",
     "financiera Perú",
-    "MANDI CORP",
-    "CORPORACIÓN MANDI SAC",
+    "Fortius Capital",
+    "FORTIUS CAPITAL S.A.C.",
     "crédito al instante",
     "dinero rápido",
+    "RUC 20616561082",
   ],
-  ogImage: "/og-image.jpg",
+  ogImage: "/images/fortius-badge.jpg",
 } as const;
 
 export const NAV_LINKS = [

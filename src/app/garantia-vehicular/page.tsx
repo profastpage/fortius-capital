@@ -19,7 +19,7 @@ import DeepLinking from "@/components/DeepLinking";
 export const metadata: Metadata = {
   title: "Préstamo con Garantía Vehicular",
   description:
-    "Usa tu auto como garantía sin dejar de usarlo. Alianza estratégica con Procustodia. Montos hasta S/ 100,000 con tasas competitivas. CORPORACIÓN MANDI SAC.",
+    "Usa tu auto como garantía sin dejar de usarlo. Alianza estratégica con Procustodia. Montos hasta S/ 100,000 con tasas competitivas. Fortius Capital (RUC: 20616561082).",
   alternates: { canonical: "/garantia-vehicular" },
 };
 
@@ -135,7 +135,7 @@ export default function GarantiaVehicularPage() {
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-black/20">
                   <Image
                     src="/images/modern-car.jpg"
-                    alt="Vehículo moderno utilizado como garantía - MANDI CORP"
+                    alt="Vehículo moderno utilizado como garantía - Fortius Capital"
                     width={480}
                     height={360}
                     className="w-full h-auto object-cover rounded-3xl"

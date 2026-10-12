@@ -300,13 +300,13 @@ export default function Calculadora() {
               <div className="absolute -top-20 -left-20 w-60 h-60 bg-[#DCAA61]/10 rounded-full blur-[80px] pointer-events-none" />
               <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-[#A97631]/10 rounded-full blur-[80px] pointer-events-none" />
               <div className="glass rounded-xl p-4 relative">
-                <p className="text-sm font-semibold text-orange-200 mb-2">
-                  CORPORACIÓN MANDI SAC
+                <p className="text-sm font-semibold text-[#DCAA61] mb-2">
+                  FORTIUS CAPITAL S.A.C.
                 </p>
                 <p className="text-xs text-white/70">
-                  RUC: 20615991938. Empresa registrada y autorizada para
+                  RUC: 20616561082. Empresa registrada y autorizada para
                   operaciones financieras en el territorio nacional.
-                  Respaldados por años de experiencia y compromiso con
+                  Respaldados por solidez, experiencia y compromiso con
                   nuestros clientes.
                 </p>
               </div>

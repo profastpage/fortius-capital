@@ -20,11 +20,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "MANDI CORP — Préstamos Personales y Garantía Vehicular en Perú",
-    template: "%s | MANDI CORP",
+    default: "Fortius Capital — Préstamos Personales y Garantía Vehicular en Perú",
+    template: "%s | Fortius Capital",
   },
   description:
-    "Tu solución financiera fácil, rápida y segura. Préstamos personales al instante y préstamos con garantía vehicular sin dejar de usar tu auto. CORPORACIÓN MANDI SAC (RUC: 20615991938).",
+    "Tu solución financiera fácil, rápida y segura. Préstamos personales al instante y préstamos con garantía vehicular sin dejar de usar tu auto. Fortius Capital (RUC: 20616561082).",
   keywords: [
     "préstamos personales",
     "préstamo vehicular",
@@ -32,40 +32,41 @@ export const metadata: Metadata = {
     "garantía de auto",
     "Procustodia",
     "financiera Perú",
-    "MANDI CORP",
-    "CORPORACIÓN MANDI SAC",
+    "Fortius Capital",
+    "FORTIUS CAPITAL",
+    "FORTIUS CAPITAL S.A.C.",
     "crédito al instante",
     "dinero rápido",
-    "RUC 20615991938",
+    "RUC 20616561082",
   ],
-  authors: [{ name: "CORPORACIÓN MANDI SAC" }],
-  metadataBase: new URL("https://mandi-corp.vercel.app"),
+  authors: [{ name: "FORTIUS CAPITAL S.A.C." }],
+  metadataBase: new URL("https://fortiuscapital.pe"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "MANDI CORP — Tu Solución Financiera de Confianza",
+    title: "Fortius Capital — Tu Solución Financiera de Confianza",
     description:
       "Préstamos personales al instante y préstamos con garantía vehicular. Tu aliado financiero confiable en Perú.",
-    url: "https://mandi-corp.vercel.app",
-    siteName: "MANDI CORP",
+    url: "https://fortiuscapital.pe",
+    siteName: "Fortius Capital",
     locale: "es_PE",
     type: "website",
     images: [
       {
-        url: "/og-image.webp",
+        url: "/images/fortius-badge.jpg",
         width: 1200,
         height: 630,
-        alt: "MANDI CORP — Préstamos Personales y Garantía Vehicular",
+        alt: "Fortius Capital — Préstamos Personales y Garantía Vehicular",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "MANDI CORP — Préstamos Rápidos y Seguros",
+    title: "Fortius Capital — Préstamos Rápidos y Seguros",
     description:
       "Consigue tu préstamo en minutos. Préstamos personales y con garantía vehicular.",
-    images: ["/og-image.webp"],
+    images: ["/images/fortius-badge.jpg"],
   },
   robots: {
     index: true,

@@ -8,15 +8,15 @@ import { Home, Wallet, Car, Menu } from "lucide-react";
 import { getDynamicWhatsAppUrl } from "@/lib/whatsapp";
 
 /* ═══════════════════════════════════════════════════════════════
-    MANDI CORP — Bottom Navigation Mobile (Ultra Premium v2)
+    FORTIUS CAPITAL — Bottom Navigation Mobile (Ultra Premium)
     ─────────────────────────────────────────────────────────────
     · 5 tabs: Inicio, Préstamos, WhatsApp CTA, Garantía, Más
     · WhatsApp: botón circular protruding, verde oficial, ícono real
     · Solo visible < 1024px (lg:hidden)
-    · Fondo negro MANDI #060503
+    · Fondo negro profundo #060503 con perlado y dorado
     · Borde superior dorado #DCAA61
     · Esquinas superiores redondeadas + blur + sombra
-    · "Más" dispara evento 'mandi:open-drawer' que escucha el Navbar
+    · "Más" dispara evento 'fortius:open-drawer' que escucha el Navbar
    ═══════════════════════════════════════════════════════════════ */
 
 type NavItem = {
@@ -65,6 +65,7 @@ export default function BottomNav() {
 
   const openDrawer = () => {
     if (typeof window !== "undefined") {
+      window.dispatchEvent(new CustomEvent("fortius:open-drawer"));
       window.dispatchEvent(new CustomEvent("mandi:open-drawer"));
     }
   };
