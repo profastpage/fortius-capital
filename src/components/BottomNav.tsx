@@ -56,7 +56,7 @@ function WhatsAppIcon({ className }: { className?: string }) {
 export default function BottomNav() {
   const pathname = usePathname();
   const [routeKey, setRouteKey] = useState(pathname);
-  const [waUrl, setWaUrl] = useState("https://wa.me/51966897008");
+  const [waUrl, setWaUrl] = useState("https://wa.me/51998352653");
 
   useEffect(() => {
     setRouteKey(pathname);

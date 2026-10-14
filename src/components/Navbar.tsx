@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
-import { NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS, SITE_CONFIG } from "@/lib/constants";
 import { getDynamicWhatsAppUrl } from "@/lib/whatsapp";
 import FortiusLogo from "@/components/FortiusLogo";
 
@@ -98,7 +98,7 @@ export default function Navbar() {
 
   // Dynamic WhatsApp URL based on current pathname
   const dynamicWhatsAppUrl = getDynamicWhatsAppUrl(pathname);
-  const phoneHref = "tel:+51966897008";
+  const phoneHref = `tel:${SITE_CONFIG.phone}`;
 
   return (
     <>

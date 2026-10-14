@@ -1,10 +1,10 @@
 /**
  * WhatsApp Conversion Utility
  * Centralized redirect logic for all WhatsApp CTAs across the site.
- * Phone: +51 966 897 008 (Fortius Capital)
+ * Phone: +51 998 352 653 (Fortius Capital)
  */
 
-export const WHATSAPP_PHONE = "51966897008";
+export const WHATSAPP_PHONE = "51998352653";
 
 type WhatsAppContext =
   | "home"

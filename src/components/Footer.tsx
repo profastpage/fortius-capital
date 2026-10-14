@@ -126,7 +126,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-orange-400 mt-0.5 shrink-0" />
+                <Phone className="w-4 h-4 text-[#DCAA61] mt-0.5 shrink-0" />
                 <div>
                   <p className="text-sm text-slate-300 font-medium">
                     WhatsApp
@@ -137,23 +137,23 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     className="text-sm text-slate-400 hover:text-white transition-colors"
                   >
-                    {SITE_CONFIG.phone}
-                  </a>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-orange-400 mt-0.5 shrink-0" />
-                <div>
-                  <p className="text-sm text-slate-300 font-medium">
-                    Central Telefónica
-                  </p>
-                  <a href="tel:+51966897008" className="text-sm text-slate-400 hover:text-[#DCAA61] transition-colors duration-200">
                     {SITE_CONFIG.phoneDisplay}
                   </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Mail className="w-4 h-4 text-orange-400 mt-0.5 shrink-0" />
+                <Phone className="w-4 h-4 text-[#DCAA61] mt-0.5 shrink-0" />
+                <div>
+                  <p className="text-sm text-slate-300 font-medium">
+                    Central Telefónica
+                  </p>
+                  <a href={`tel:${SITE_CONFIG.phone}`} className="text-sm text-slate-400 hover:text-[#DCAA61] transition-colors duration-200">
+                    {SITE_CONFIG.phoneDisplay}
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="w-4 h-4 text-[#DCAA61] mt-0.5 shrink-0" />
                 <div>
                   <p className="text-sm text-slate-300 font-medium">
                     Correo Electrónico
